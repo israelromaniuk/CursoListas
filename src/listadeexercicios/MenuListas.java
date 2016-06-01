@@ -31,6 +31,8 @@ public class MenuListas {
             case "7":
                 break;
             case "8":
+                ListaDeExercicios08 lista8 = new ListaDeExercicios08();
+                lista8.main(null);
                 break;
             case "9":
                 ListaDeExercicios09 lista9 = new ListaDeExercicios09();
