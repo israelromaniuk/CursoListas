@@ -1,3 +1,5 @@
+package listadeexercicios;
+
 import java.util.Scanner;
 
 public class ListadeExercicios05 {
@@ -11,7 +13,7 @@ public class ListadeExercicios05 {
 		while (rVouF) {
 
 			System.out.println("--------------------------------------------");
-			System.out.printf("DIGITE O NÚMERO DA QUESTÃO > ");
+			System.out.printf("DIGITE O Nï¿½MERO DA QUESTï¿½O > ");
 			String resposta1 = ler.next();
 
 			System.out.println("--------------------------------------------");
@@ -78,7 +80,7 @@ public class ListadeExercicios05 {
 				rVouF = false;
 				break;
 			default:
-				System.out.println("Questão não encontrada...");
+				System.out.println("Questï¿½o nï¿½o encontrada...");
 				main(null);
 				break;
 			}
@@ -89,33 +91,33 @@ public class ListadeExercicios05 {
 	private static void Exercicio001() {
 
 		System.out.println("PORCENTAGEM DE ELEITORES\n");
-		System.out.print("Digite o número de votos brancos > ");
+		System.out.print("Digite o nï¿½mero de votos brancos > ");
 		double branco = ler.nextDouble();
-		System.out.print("Digite o número de votos núlos > ");
+		System.out.print("Digite o nï¿½mero de votos nï¿½los > ");
 		double nulo = ler.nextDouble();
-		System.out.print("Digite o número de votos válidos > ");
+		System.out.print("Digite o nï¿½mero de votos vï¿½lidos > ");
 		double valido = ler.nextDouble();
 
 		double total = branco + nulo + valido;
 
 		System.out.println("Votos Brancos = " + (branco / total) * 100 + "%");
 		System.out.println("Votos Nulos =   " + (nulo / total) * 100 + "%");
-		System.out.println("Votos Válidos = " + (valido / total) * 100 + "%");
+		System.out.println("Votos Vï¿½lidos = " + (valido / total) * 100 + "%");
 
 		main(null);
 
 	}
 
 	private static void Exercicio002() {
-		System.out.println("CALCULA O PERCENTUAL DO SALÁRIO\n");
+		System.out.println("CALCULA O PERCENTUAL DO SALï¿½RIO\n");
 
-		System.out.print("Digite seu salário atual >");
+		System.out.print("Digite seu salï¿½rio atual >");
 		int sa = ler.nextInt();
-		System.out.print("Digite em quantos porcentos será seu reajuste > ");
+		System.out.print("Digite em quantos porcentos serï¿½ seu reajuste > ");
 		int sr = ler.nextInt();
 
 		int st = sa + (sa * sr / 100);
-		System.out.println("A partir de agora seu salário será de R$" + st);
+		System.out.println("A partir de agora seu salï¿½rio serï¿½ de R$" + st);
 
 		main(null);
 
@@ -123,11 +125,11 @@ public class ListadeExercicios05 {
 
 	private static void Exercicio003() {
 
-		System.out.println("MOSTRAR O CUSTO DE FÁBRICA\n");
+		System.out.println("MOSTRAR O CUSTO DE Fï¿½BRICA\n");
 
-		System.out.print("Quanto é o custo de fábrica? > ");
+		System.out.print("Quanto ï¿½ o custo de fï¿½brica? > ");
 		int pd = 28, imp = 45, qf = ler.nextInt();
-		System.out.println("O custo final ao consumidor é de R$" + (((qf * pd / 100) + (qf * imp / 100)) + qf));
+		System.out.println("O custo final ao consumidor ï¿½ de R$" + (((qf * pd / 100) + (qf * imp / 100)) + qf));
 
 		main(null);
 
@@ -135,18 +137,18 @@ public class ListadeExercicios05 {
 
 	private static void Exercicio004() {
 
-		System.out.println("SALÁRIO DO VENDEDOR\n");
+		System.out.println("SALï¿½RIO DO VENDEDOR\n");
 
-		System.out.print("Quantos carros foi vendido por este funcionário? > ");
+		System.out.print("Quantos carros foi vendido por este funcionï¿½rio? > ");
 		double cv = ler.nextDouble();
-		System.out.print("Qual é o valor total de suas vendas? > ");
+		System.out.print("Qual ï¿½ o valor total de suas vendas? > ");
 		double vt = ler.nextDouble();
-		System.out.print("Qual o seu salário fixo? > ");
+		System.out.print("Qual o seu salï¿½rio fixo? > ");
 		double sf = ler.nextDouble();
 		System.out.print("Qual o valor que ele recebe por carro vendido? > ");
 		double cr = ler.nextDouble();
 		System.out.println();
-		System.out.println("O salário final do vendedor é de R$" + (double) (cv * 5 / 100) + vt + sf + cr);
+		System.out.println("O salï¿½rio final do vendedor ï¿½ de R$" + (double) (cv * 5 / 100) + vt + sf + cr);
 
 		main(null);
 
@@ -167,7 +169,7 @@ public class ListadeExercicios05 {
 			System.out.println("Digite sua altura > ");
 			double altura = ler.nextDouble();
 
-			System.out.println(nome + " seu peso ideal é " + ((72.7 * altura) - 58));
+			System.out.println(nome + " seu peso ideal ï¿½ " + ((72.7 * altura) - 58));
 
 		} else if ("F".equalsIgnoreCase(sexo)) {
 
@@ -178,10 +180,10 @@ public class ListadeExercicios05 {
 			System.out.println("Digite sua altura > ");
 			double altura = ler.nextDouble();
 
-			System.out.println(nome + " seu peso ideal é " + ((62.1 * altura) - 44.7));
+			System.out.println(nome + " seu peso ideal ï¿½ " + ((62.1 * altura) - 44.7));
 
 		} else {
-			System.out.println("Não consta");
+			System.out.println("Nï¿½o consta");
 		}
 
 		main(null);
@@ -195,7 +197,7 @@ public class ListadeExercicios05 {
 		while (x < 10) {
 			x++;
 
-			System.out.printf("Digite o %s° valor > ", x);
+			System.out.printf("Digite o %sï¿½ valor > ", x);
 			v = ler.nextInt();
 
 			if (v >= 10 && v <= 20) {
@@ -206,8 +208,8 @@ public class ListadeExercicios05 {
 
 		}
 
-		System.out.println("O total de valores validos é de " + vtp);
-		System.out.println("O total de valores invalidos é de " + vti);
+		System.out.println("O total de valores validos ï¿½ de " + vtp);
+		System.out.println("O total de valores invalidos ï¿½ de " + vti);
 
 		main(null);
 
@@ -215,58 +217,58 @@ public class ListadeExercicios05 {
 
 	private static void Exercicio007() {
 
-		System.out.println("OBTER A MÉDIA\n");
+		System.out.println("OBTER A Mï¿½DIA\n");
 		int x = 0, vt = 0;
 		while (x < 10) {
 			x++;
-			System.out.printf("Digite o %s° valor > ", x);
+			System.out.printf("Digite o %sï¿½ valor > ", x);
 			vt += ler.nextInt();
 		}
-		System.out.println("A média dessas notas é " + vt / 10);
+		System.out.println("A mï¿½dia dessas notas ï¿½ " + vt / 10);
 
 	}
 
 	private static void Exercicio008() {
 
-		System.out.println("MÉDIA DOS ALUNOS DA CLASSE\n");
+		System.out.println("Mï¿½DIA DOS ALUNOS DA CLASSE\n");
 
-		System.out.print("Quantos alunoa há, nesta turma? > ");
+		System.out.print("Quantos alunoa hï¿½, nesta turma? > ");
 		int x = 0, nt = 0, tA = ler.nextInt();
 
 		while (x < tA) {
 			x++;
-			System.out.printf("Digite a nota do %s° aluno > ", x);
+			System.out.printf("Digite a nota do %sï¿½ aluno > ", x);
 			nt += ler.nextInt();
 		}
 
-		System.out.println("A média da sala é " + nt / tA);
+		System.out.println("A mï¿½dia da sala ï¿½ " + nt / tA);
 		main(null);
 
 	}
 
 	private static void Exercicio009() {
 
-		System.out.println("SOMA 10 NÚMEROS\n");
+		System.out.println("SOMA 10 Nï¿½MEROS\n");
 
 		int ns = 0, x = 0;
 		while (x < 10) {
 			x++;
-			System.out.printf("Digite o %s° número > ", x);
+			System.out.printf("Digite o %sï¿½ nï¿½mero > ", x);
 			ns += ler.nextInt();
 		}
 
-		System.out.println("A soma total dos números é " + ns);
+		System.out.println("A soma total dos nï¿½meros ï¿½ " + ns);
 		main(null);
 
 	}
 
 	private static void Exercicio010() {
 
-		System.out.println("LER 10 NÚMERO MENORES DE 40\n");
+		System.out.println("LER 10 Nï¿½MERO MENORES DE 40\n");
 		int nantigo = 0, numero = 0, x = 0;
 		while (x < 10) {
 			x++;
-			System.out.printf("Digiter o %s° número > ", x);
+			System.out.printf("Digiter o %sï¿½ nï¿½mero > ", x);
 			numero = ler.nextInt();
 
 			if (numero < 40) {
@@ -275,7 +277,7 @@ public class ListadeExercicios05 {
 
 		}
 
-		System.out.println("A soma dos número válidos é de " + nantigo);
+		System.out.println("A soma dos nï¿½mero vï¿½lidos ï¿½ de " + nantigo);
 		main(null);
 
 	}
@@ -287,15 +289,15 @@ public class ListadeExercicios05 {
 
 	private static void Exercicio012() {
 
-		System.out.println("LER O CÓDIGO E O PREÇO DOS PRODUTOS\n");
+		System.out.println("LER O Cï¿½DIGO E O PREï¿½O DOS PRODUTOS\n");
 		int x = 0;
 		double media = 0, p = 0, maiorP = 0;
 		while (x < 15) {
 			x++;
 
-			System.out.printf("Digite o código do %s produto > ", x);
+			System.out.printf("Digite o cï¿½digo do %s produto > ", x);
 			ler.nextInt();
-			System.out.printf("Digite o preço do %s produto > ", x);
+			System.out.printf("Digite o preï¿½o do %s produto > ", x);
 			p = ler.nextInt();
 
 			media += p;
@@ -306,7 +308,7 @@ public class ListadeExercicios05 {
 
 		}
 
-		System.out.println("O maior preço lido foi R$" + maiorP + " e a média dos preços é de R$" + media / 15);
+		System.out.println("O maior preï¿½o lido foi R$" + maiorP + " e a mï¿½dia dos preï¿½os ï¿½ de R$" + media / 15);
 
 	}
 
@@ -314,16 +316,16 @@ public class ListadeExercicios05 {
 
 		System.out.println("DADOS DOS HABITANTES\n");
 
-		System.out.print("Quantos habitantes há nesta cidade? > ");
+		System.out.print("Quantos habitantes hï¿½ nesta cidade? > ");
 		int x = 0, pPobre = 0, mediaFilhos = 0, filhos = 0, habitantes = ler.nextInt();
 		double mediaSalario = 0, salario = 0, maiorSalario = 0;
 
 		while (x < habitantes) {
 			x++;
-			System.out.printf("Qual o salário do %s° habitante? > ", x);
+			System.out.printf("Qual o salï¿½rio do %sï¿½ habitante? > ", x);
 			salario = ler.nextDouble();
 			mediaSalario += salario;
-			System.out.printf("Quantos filhos tem o %s° habitante? > ", x);
+			System.out.printf("Quantos filhos tem o %sï¿½ habitante? > ", x);
 			filhos = ler.nextInt();
 			mediaFilhos += filhos;
 
@@ -336,11 +338,11 @@ public class ListadeExercicios05 {
 
 		}
 
-		System.out.println("A média salarial da população é de R$" + mediaSalario / habitantes);
-		System.out.println("A média de filhos da população é de " + mediaFilhos / habitantes);
-		System.out.println("O maior do salario dos habitantes é de R$" + maiorSalario);
+		System.out.println("A mï¿½dia salarial da populaï¿½ï¿½o ï¿½ de R$" + mediaSalario / habitantes);
+		System.out.println("A mï¿½dia de filhos da populaï¿½ï¿½o ï¿½ de " + mediaFilhos / habitantes);
+		System.out.println("O maior do salario dos habitantes ï¿½ de R$" + maiorSalario);
 		System.out.println(
-				"O percentual de pessoas com salário menor que R$ 150,00 é de " + pPobre * 100 / habitantes + "%");
+				"O percentual de pessoas com salï¿½rio menor que R$ 150,00 ï¿½ de " + pPobre * 100 / habitantes + "%");
 
 	}
 

@@ -1,3 +1,5 @@
+package listadeexercicios;
+
 import java.util.Scanner;
 
 public class ListadeExercicios03 {
@@ -11,7 +13,7 @@ public class ListadeExercicios03 {
 		while (rVouF) {
 
 			System.out.println("--------------------------------------------");
-			System.out.printf("DIGITE O NÚMERO DA QUESTÃO > ");
+			System.out.printf("DIGITE O Nï¿½MERO DA QUESTï¿½O > ");
 			String resposta1 = ler.next();
 
 			System.out.println("--------------------------------------------");
@@ -58,7 +60,7 @@ public class ListadeExercicios03 {
 				rVouF = false;
 				break;
 			default:
-				System.out.println("Questão não encontrada...");
+				System.out.println("Questï¿½o nï¿½o encontrada...");
 				main(null);
 				break;
 			}
@@ -69,9 +71,9 @@ public class ListadeExercicios03 {
 
 	private static void Exercicio001() {
 
-		System.out.println("MÚLTIPLOS ENTRE DOIS VALORES\n");
+		System.out.println("Mï¿½LTIPLOS ENTRE DOIS VALORES\n");
 		
-		System.out.println("Digite o valor a saber os múltiplos > ");
+		System.out.println("Digite o valor a saber os mï¿½ltiplos > ");
 		int N = ler.nextInt();
 
 		System.out.println("Digite o valor do intervalo inicial > ");
@@ -82,7 +84,7 @@ public class ListadeExercicios03 {
 
 		do{
 			if (A % N == 0) {
-				System.out.println("O múltiplo é " + A);
+				System.out.println("O mï¿½ltiplo ï¿½ " + A);
 				A++;
 			} else {
 				A++;
@@ -95,7 +97,7 @@ public class ListadeExercicios03 {
 
 	private static void Exercicio002() {
 
-		System.out.println("CALCULAR A SOMA DE NÚMEROS PARES ENTRE DOIS INTERVALOS\n");
+		System.out.println("CALCULAR A SOMA DE Nï¿½MEROS PARES ENTRE DOIS INTERVALOS\n");
 		
 		System.out.print("Digite o inicio do intervalo > ");
 		int n1 = ler.nextInt();
@@ -112,7 +114,7 @@ public class ListadeExercicios03 {
 
 		}while (n1 <= n2);
 		
-		System.out.println("O valor é " + x);
+		System.out.println("O valor ï¿½ " + x);
 
 		main(null);
 
@@ -120,19 +122,19 @@ public class ListadeExercicios03 {
 
 	private static void Exercicio003() {
 		
-		System.out.println("CONTA NÚMEROS ENTRE 100 E 200\n");
+		System.out.println("CONTA Nï¿½MEROS ENTRE 100 E 200\n");
 
 		int x = 1, n = 0, tn = 0, l = 0;
 		
 		do{
 			l++;
-			System.out.printf("Digite o %s número > ",l);
+			System.out.printf("Digite o %s nï¿½mero > ",l);
 			n = ler.nextInt();
 			tn = (n<=200 && n>=100)?tn+1:tn;
 			x = (n == 0)? 0: 1;
 		}while (x == 1);
 		
-		System.out.println("O total de números válidos é de "+tn);
+		System.out.println("O total de nï¿½meros vï¿½lidos ï¿½ de "+tn);
 
 		main(null);
 
@@ -140,7 +142,7 @@ public class ListadeExercicios03 {
 
 	private static void Exercicio004() {
 
-		System.out.println("MOSTRA E SOMA OS NÚMEROS PARES DENTRO DO INTERVALO\n");
+		System.out.println("MOSTRA E SOMA OS Nï¿½MEROS PARES DENTRO DO INTERVALO\n");
 		
 		System.out.print("Digite o limite inferior > ");
 		int li = ler.nextInt();
@@ -150,23 +152,23 @@ public class ListadeExercicios03 {
 		do {
 
 			if (li % 2 == 0) {
-				System.out.println("Os valores pares são " + li);
+				System.out.println("Os valores pares sï¿½o " + li);
 				soma += li;
 			} else {
 				soma += 0;
 			}
 			li++;
 		}while (li < ls);
-		System.out.println("A soma é igual á " + soma);
+		System.out.println("A soma ï¿½ igual ï¿½ " + soma);
 
 		main(null);
 	}
 
 	private static void Exercicio005() {
 
-		System.out.println("MOSTRAR A TABUADO DO NÚMERO");
+		System.out.println("MOSTRAR A TABUADO DO Nï¿½MERO");
 		
-		System.out.print("Digite o número para saber a tabudada > ");
+		System.out.print("Digite o nï¿½mero para saber a tabudada > ");
 		int x = 0, n = ler.nextInt();
 
 		do {
@@ -178,7 +180,7 @@ public class ListadeExercicios03 {
 
 	private static void Exercicio006() {
 
-		System.out.println("MOSTRA O MAIOR NÚMERO DIGITADO DEPOIS DE DIGITAR 0");
+		System.out.println("MOSTRA O MAIOR Nï¿½MERO DIGITADO DEPOIS DE DIGITAR 0");
 		
 		int numero = 0, maior = 0;
 
@@ -188,7 +190,7 @@ public class ListadeExercicios03 {
 			if (numero > maior) {
 				maior = numero;
 			} else if (numero == -1) {
-				System.out.println("O maior número é " + maior);
+				System.out.println("O maior nï¿½mero ï¿½ " + maior);
 			}
 		}while (numero >= 0);
 
@@ -197,13 +199,13 @@ public class ListadeExercicios03 {
 
 	private static void Exercicio007() {
 
-		System.out.println("CALCULAR A MÉDIA QUANTAS VEZES QUISER");
+		System.out.println("CALCULAR A Mï¿½DIA QUANTAS VEZES QUISER");
 		
 		int r = 1;
 		do {
 
 			System.out
-					.print("Deseja executar o programa?\n1 - SIM\t\t0 - NÃO\n\n> ");
+					.print("Deseja executar o programa?\n1 - SIM\t\t0 - Nï¿½O\n\n> ");
 			r = ler.nextInt();
 
 			if (r == 1) {
@@ -212,7 +214,7 @@ public class ListadeExercicios03 {
 				System.out.print("Digite a segunda nota > ");
 				int ps = ler.nextInt();
 				int media = (pn + ps) / 2;
-				System.out.println("A média é " + media + "\n\n");
+				System.out.println("A mï¿½dia ï¿½ " + media + "\n\n");
 
 			} else {
 				System.out.println("Fechando...");
@@ -233,19 +235,19 @@ public class ListadeExercicios03 {
 
 		do {
 			var++;
-			System.out.println("Digite o nome da " + var + "º pessoa: ");
+			System.out.println("Digite o nome da " + var + "ï¿½ pessoa: ");
 			if (var == 1) {
 				nome = ler.next();
 			} else {
 				nome2 = ler.next();
 			}
-			System.out.println("Digite o peso da " + var + "º pessoa: ");
+			System.out.println("Digite o peso da " + var + "ï¿½ pessoa: ");
 			if (var == 1) {
 				peso = ler.nextDouble();
 			} else {
 				peso2 = ler.nextDouble();
 			}
-			System.out.println("Digite a altura da " + var + "º pessoa: ");
+			System.out.println("Digite a altura da " + var + "ï¿½ pessoa: ");
 			if (var == 1) {
 				alt = ler.nextDouble();
 			} else {
@@ -254,14 +256,14 @@ public class ListadeExercicios03 {
 
 		}while (var < 2);
 		if (peso > peso2) {
-			System.out.print(nome + " é a pessoa mais pesada ");
+			System.out.print(nome + " ï¿½ a pessoa mais pesada ");
 		} else {
-			System.out.print(nome2 + " é a pessoa mais pesada ");
+			System.out.print(nome2 + " ï¿½ a pessoa mais pesada ");
 		}
 		if (alt > alt2) {
-			System.out.print("e a pessoa mais alta é " + nome);
+			System.out.print("e a pessoa mais alta ï¿½ " + nome);
 		} else {
-			System.out.print("e a pessoa mais alta é " + nome2);
+			System.out.print("e a pessoa mais alta ï¿½ " + nome2);
 		}
 
 	}
@@ -270,7 +272,7 @@ public class ListadeExercicios03 {
 
 		double tv = 0;
 		
-		System.out.println("MOSTRA QUANTAS DIVISÕES FORAM EFETUADAS\n");
+		System.out.println("MOSTRA QUANTAS DIVISï¿½ES FORAM EFETUADAS\n");
 		
 		System.out.println("Digite um valor > ");
 		int valor = ler.nextInt();
@@ -279,8 +281,8 @@ public class ListadeExercicios03 {
 			valor /= 2;
 			tv = tv+1;
 		}while (valor > 1);
-		System.out.printf("O resultado da última divisão foi %s. ",valor);
-		System.out.printf("Foram efetuadas %s divisões \n",tv);		
+		System.out.printf("O resultado da ï¿½ltima divisï¿½o foi %s. ",valor);
+		System.out.printf("Foram efetuadas %s divisï¿½es \n",tv);		
 
 		main(null);
 		
@@ -297,10 +299,10 @@ public class ListadeExercicios03 {
 
 			predioAndar++;
 
-			System.out.printf("Quantas pessoas entraram no %s° andar? > ",
+			System.out.printf("Quantas pessoas entraram no %sï¿½ andar? > ",
 					predioAndar);
 			pessoasEntraAndar = ler.nextInt();
-			System.out.printf("Quantas pessoas saíram no %s° andar? > ",
+			System.out.printf("Quantas pessoas saï¿½ram no %sï¿½ andar? > ",
 					predioAndar);
 			pessoasSaiAndar = ler.nextInt();
 
@@ -310,7 +312,7 @@ public class ListadeExercicios03 {
 			if (predioAndar == 1) {
 
 				if (totalPessoasAndar < 0) {
-					System.out.println("FALHA NA MATRIX!!!! ²³£¢²£¬²£²³£¢");
+					System.out.println("FALHA NA MATRIX!!!! ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					predioAndar--;
 				} 
 			} else {
@@ -322,7 +324,7 @@ public class ListadeExercicios03 {
 
 				else if (totalPessoasAndar < pessoasSaiAndar) {
 					System.out
-							.println("FALHA NA MATRIX!!!! ££¢³£¢³£²²³²³£³£¢¬");
+							.println("FALHA NA MATRIX!!!! ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					predioAndar--;
 				}
 
@@ -331,7 +333,7 @@ public class ListadeExercicios03 {
 		}while (predioAndar < qp);
 
 		System.out.printf(
-				"Todos os %s passageiros devem descer ao último andar",
+				"Todos os %s passageiros devem descer ao ï¿½ltimo andar",
 				totalPessoas);
 
 	}

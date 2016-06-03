@@ -1,3 +1,5 @@
+package listadeexercicios;
+
 import java.util.Scanner;
 
 public class ListaDeExercicios01 {
@@ -11,7 +13,7 @@ public class ListaDeExercicios01 {
 		while (rVouF) {
 
 			System.out.println("--------------------------------------------");
-			System.out.printf("DIGITE O NÚMERO DA QUESTÃO > ");
+			System.out.printf("DIGITE O Nï¿½MERO DA QUESTï¿½O > ");
 			String resposta1 = ler.next();
 
 			System.out.println("--------------------------------------------");
@@ -62,7 +64,7 @@ public class ListaDeExercicios01 {
 				rVouF = false;
 				break;
 			default:
-				System.out.println("Questão não encontrada...");
+				System.out.println("Questï¿½o nï¿½o encontrada...");
 				main(null);
 				break;
 			}
@@ -72,17 +74,17 @@ public class ListaDeExercicios01 {
 
 	public static void Exercicio001() {
 
-		System.out.println("SABER SE UM VALOR É POSITIVO OU NEGATIVO \n");
+		System.out.println("SABER SE UM VALOR ï¿½ POSITIVO OU NEGATIVO \n");
 		System.out.print("Digite o valor > ");
 		String valorString = ler.next();
 		int vInteiro = Integer.parseInt(valorString);
 
 		if (vInteiro >= 0) {
-			System.out.println("o valor é positivo\n");
+			System.out.println("o valor ï¿½ positivo\n");
 		} else if (vInteiro < 0) {
-			System.out.println("o valor é negativo\n");
+			System.out.println("o valor ï¿½ negativo\n");
 		} else {
-			System.out.println("Digite somente números");
+			System.out.println("Digite somente nï¿½meros");
 			System.out.println("-----------------------------");
 		}
 
@@ -91,32 +93,32 @@ public class ListaDeExercicios01 {
 
 	public static void Exercicio002() {
 
-		System.out.println("REAJUSTE DE BONIFICAÇÃO\n");
+		System.out.println("REAJUSTE DE BONIFICAï¿½ï¿½O\n");
 		System.out.print("Digite sua categoria > ");
 		String categoria = ler.next();
-		System.out.print("Digite seu salário > ");
+		System.out.print("Digite seu salï¿½rio > ");
 		float salario = ler.nextInt();
 
-		if ("Primário".equalsIgnoreCase(categoria) || "primario".equalsIgnoreCase(categoria)) {
+		if ("Primï¿½rio".equalsIgnoreCase(categoria) || "primario".equalsIgnoreCase(categoria)) {
 			if (salario < 900.00) {
-				System.out.println("Total do salário > R$" + (salario + (salario * 20 / 100)));
+				System.out.println("Total do salï¿½rio > R$" + (salario + (salario * 20 / 100)));
 			} else {
-				System.out.println("Total do salário > R$" + salario);
+				System.out.println("Total do salï¿½rio > R$" + salario);
 			}
-		} else if ("Ginásio".equalsIgnoreCase(categoria) || "ginasio".equalsIgnoreCase(categoria)) {
+		} else if ("Ginï¿½sio".equalsIgnoreCase(categoria) || "ginasio".equalsIgnoreCase(categoria)) {
 			if (salario <= 1200.00) {
-				System.out.println("Total do salário > R$" + (salario + (salario * 15 / 100)));
+				System.out.println("Total do salï¿½rio > R$" + (salario + (salario * 15 / 100)));
 			} else {
-				System.out.println("Total do salário > R$" + salario);
+				System.out.println("Total do salï¿½rio > R$" + salario);
 			}
 		} else if ("Superior".equalsIgnoreCase(categoria)) {
 			if (salario <= 3000.00) {
-				System.out.println("Total do salário > R$" + (salario + (salario * 5 / 100)));
+				System.out.println("Total do salï¿½rio > R$" + (salario + (salario * 5 / 100)));
 			} else {
-				System.out.println("Total do salário > R$" + salario);
+				System.out.println("Total do salï¿½rio > R$" + salario);
 			}
 		} else {
-			System.out.println("Digite categoria e salários válidos, REINICIANDO...\n");
+			System.out.println("Digite categoria e salï¿½rios vï¿½lidos, REINICIANDO...\n");
 			System.out.println("------------------------\n\n");
 			Exercicio002();
 		}
@@ -126,10 +128,10 @@ public class ListaDeExercicios01 {
 
 	public static void Exercicio003() {
 
-		System.out.println("AUMENTO DE SALÁRIO DE ACORDO COM A IDADE\n");
+		System.out.println("AUMENTO DE SALï¿½RIO DE ACORDO COM A IDADE\n");
 		System.out.println("Digite a sua idade");
 		int idade = ler.nextInt();
-		System.out.println("Digite o seu salário");
+		System.out.println("Digite o seu salï¿½rio");
 		float salario = ler.nextFloat();
 
 		if (idade >= 55) {
@@ -164,7 +166,7 @@ public class ListaDeExercicios01 {
 		System.out.printf("Digite o primeiro valor> ");
 		double v1 = ler.nextDouble();
 
-		System.out.printf("Digite a operação desejada> %s ", v1);
+		System.out.printf("Digite a operaï¿½ï¿½o desejada> %s ", v1);
 		String op = ler.next();
 
 		System.out.printf("Digite o segundo valor> %s %s ", v1, op);
@@ -175,7 +177,7 @@ public class ListaDeExercicios01 {
 		resultado = ("+".equals(op)) ? v1 + v2
 				: ("-".equals(op)) ? v1 - v2 : ("*".equals(op)) ? v1 * v2 : ("/".equals(op)) ? v1 / v2 : null;
 
-		System.out.println("O resultado é " + resultado);
+		System.out.println("O resultado ï¿½ " + resultado);
 
 		main(null);
 	}
@@ -192,19 +194,19 @@ public class ListaDeExercicios01 {
 		if ("Masculino".equalsIgnoreCase(sexo)) {
 			double pesoIdeal = (72.7 * altura - 62);
 			if (pesoIdeal >= 10) {
-				System.out.println("Você não está em seu peso ideal");
+				System.out.println("Vocï¿½ nï¿½o estï¿½ em seu peso ideal");
 			} else {
-				System.out.println("Você está em seu peso ideal");
+				System.out.println("Vocï¿½ estï¿½ em seu peso ideal");
 			}
 		} else if ("Feminino".equalsIgnoreCase(sexo)) {
 			double pesoIdeal = (62.1 * altura - 48.7);
 			if (pesoIdeal >= 10) {
-				System.out.println("Você não está em seu peso ideal");
+				System.out.println("Vocï¿½ nï¿½o estï¿½ em seu peso ideal");
 			} else {
-				System.out.println("Você está em seu peso ideal");
+				System.out.println("Vocï¿½ estï¿½ em seu peso ideal");
 			}
 		} else {
-			System.out.println("Digite um sexo válido...\n\n");
+			System.out.println("Digite um sexo vï¿½lido...\n\n");
 			Exercicio006();
 		}
 
@@ -214,13 +216,13 @@ public class ListaDeExercicios01 {
 
 	public static void Exercicio007() {
 
-		System.out.println("SABER O ANTECESSOR DO NÚMERO");
+		System.out.println("SABER O ANTECESSOR DO Nï¿½MERO");
 		System.out.println("Digite um valor");
 		int valor = ler.nextInt();
 
 		int antecessor = valor - 1;
 
-		System.out.println("O antecessor é " + antecessor);
+		System.out.println("O antecessor ï¿½ " + antecessor);
 
 		main(null);
 
@@ -228,16 +230,16 @@ public class ListaDeExercicios01 {
 
 	public static void Exercicio008() {
 
-		System.out.println("PROMOÇÃO DAS MAÇÃS");
-		System.out.println("Quantas maçãs você comprou?");
+		System.out.println("PROMOï¿½ï¿½O DAS MAï¿½ï¿½S");
+		System.out.println("Quantas maï¿½ï¿½s vocï¿½ comprou?");
 		int q = ler.nextInt();
 
 		if (q >= 12) {
 			double preco = q * 1.00;
-			System.out.println("O total da compra é R$" + preco);
+			System.out.println("O total da compra ï¿½ R$" + preco);
 		} else {
 			double preco = q * 1.30;
-			System.out.println("O total da compra é R$" + preco);
+			System.out.println("O total da compra ï¿½ R$" + preco);
 		}
 
 		main(null);
@@ -253,9 +255,9 @@ public class ListaDeExercicios01 {
 		int v2 = ler.nextInt();
 
 		if (v1 > v2) {
-			System.out.println("O número maior é" + v1);
+			System.out.println("O nï¿½mero maior ï¿½" + v1);
 		} else {
-			System.out.println("O número maior é" + v2);
+			System.out.println("O nï¿½mero maior ï¿½" + v2);
 		}
 
 		main(null);
@@ -264,7 +266,7 @@ public class ListaDeExercicios01 {
 
 	public static void Exercicio010() {
 
-		System.out.println("ORDEM CRESCENTE DOS NÚMEROS");
+		System.out.println("ORDEM CRESCENTE DOS Nï¿½MEROS");
 		System.out.println("Digite o primeiro valor");
 		int v1 = ler.nextInt();
 		System.out.println("Digite o segundo valor");
@@ -284,7 +286,7 @@ public class ListaDeExercicios01 {
 
 		int v[] = new int[6];
 		for (int i = 1; i < 6; i++) {
-			System.out.printf("Digite o %s° valor > ", i);
+			System.out.printf("Digite o %sï¿½ valor > ", i);
 			v[i] = ler.nextInt();
 		}
 
@@ -294,7 +296,7 @@ public class ListaDeExercicios01 {
 		soma = (v[3] % 2 == 0) ? soma + v[3] : soma + 0;
 		soma = (v[4] % 2 == 0) ? soma + v[4] : soma + 0;
 		soma = (v[5] % 2 == 0) ? soma + v[5] : soma + 0;
-		System.out.println("A soma dos pares é " + soma);
+		System.out.println("A soma dos pares ï¿½ " + soma);
 		main(null);
 
 	}

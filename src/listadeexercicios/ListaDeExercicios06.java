@@ -1,3 +1,5 @@
+package listadeexercicios;
+
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
@@ -13,7 +15,7 @@ public class ListaDeExercicios06 {
 		while (rVouF) {
 
 			System.out.println("--------------------------------------------");
-			System.out.printf("DIGITE O NÚMERO DA QUESTÃO > ");
+			System.out.printf("DIGITE O Nï¿½MERO DA QUESTï¿½O > ");
 			String resposta1 = leia.next();
 
 			System.out.println("--------------------------------------------");
@@ -72,7 +74,7 @@ public class ListaDeExercicios06 {
 				rVouF = false;
 				break;
 			default:
-				System.out.println("Questão não encontrada...");
+				System.out.println("Questï¿½o nï¿½o encontrada...");
 				main(null);
 				break;
 			}
@@ -81,7 +83,7 @@ public class ListaDeExercicios06 {
 
 	// Tabuada
 	public static void Exercicio01() {
-		System.out.print("Digite o número para exibir a tabuada: ");
+		System.out.print("Digite o nï¿½mero para exibir a tabuada: ");
 		int valor = leia.nextInt();
 		for (int x = 0; x <= 13; x++) {
 			System.out.println(valor + " x " + x + " = " + (valor * x));
@@ -102,7 +104,7 @@ public class ListaDeExercicios06 {
 	public static void Exercicio03() {
 		int soma = 0, neg = 0, valor = 0;
 		for (int x = 1; x <= 50; x++) {
-			System.out.println("Digite o " + x + "º valor: ");
+			System.out.println("Digite o " + x + "ï¿½ valor: ");
 			valor = leia.nextInt();
 			if (valor % 2 == 0) {
 				soma += valor;
@@ -110,15 +112,15 @@ public class ListaDeExercicios06 {
 				neg++;
 			}
 		}
-		System.out.println("A soma dos números pares é " + soma
-				+ " e a quantidade de números negativos é " + neg + ".");
+		System.out.println("A soma dos nï¿½meros pares ï¿½ " + soma
+				+ " e a quantidade de nï¿½meros negativos ï¿½ " + neg + ".");
 	}
 
-	// Múltiplos de 7
+	// Mï¿½ltiplos de 7
 	public static void Exercicio04() {
 		for (int x = 1; x <= 1000; x++) {
 			if (x % 7 == 0) {
-				System.out.println(x + " é múltiplo de 7.");
+				System.out.println(x + " ï¿½ mï¿½ltiplo de 7.");
 			}
 		}
 	}
@@ -132,7 +134,7 @@ public class ListaDeExercicios06 {
 				soma += x;
 			}
 		}
-		System.out.println("A soma dos valores pares é " + soma);
+		System.out.println("A soma dos valores pares ï¿½ " + soma);
 	}
 
 	public static void Exercicio06() {
@@ -145,21 +147,21 @@ public class ListaDeExercicios06 {
 
 	public static void Exercicio07() {
 		int valor = sorte.nextInt(101) + 0;
-		System.out.println("Você deve acertar um valor de 0 à 100: ");
+		System.out.println("Vocï¿½ deve acertar um valor de 0 ï¿½ 100: ");
 		int num = leia.nextInt(), cont = 1;
 
 		while (num != valor) {
 			cont++;
 			if (num > valor) {
-				System.out.println("Dica: o valor é menor.");
+				System.out.println("Dica: o valor ï¿½ menor.");
 			} else {
-				System.out.println("Dica: o valor é maior.");
+				System.out.println("Dica: o valor ï¿½ maior.");
 			}
 			System.out.println("Tente outra vez: ");
 			num = leia.nextInt();
 		}
 
-		System.out.println("Parabéns, você acertou depois de " + cont
+		System.out.println("Parabï¿½ns, vocï¿½ acertou depois de " + cont
 				+ " tentativas.");
 	}
 
@@ -182,13 +184,13 @@ public class ListaDeExercicios06 {
 			}
 		}
 		System.out.println("Das dez pessoas " + contm
-				+ " são homens maiores de idade e " + contf
-				+ " são mulheres maiores de idade.");
+				+ " sï¿½o homens maiores de idade e " + contf
+				+ " sï¿½o mulheres maiores de idade.");
 	}
 
 	public static void Exercicio09() {
 
-		System.out.print("Digite quantas linhas você quer > ");
+		System.out.print("Digite quantas linhas vocï¿½ quer > ");
 		int linhas = leia.nextInt();
 		String anterior = "";
 
@@ -250,7 +252,7 @@ public class ListaDeExercicios06 {
 		for(int x = 0;x<valor;x++){
 			soma = soma + (valor*valor-1);
 		}
-		System.out.println("A fotorial de "+valor+" é igual à "+soma);
+		System.out.println("A fotorial de "+valor+" ï¿½ igual ï¿½ "+soma);
 
 	}
 
