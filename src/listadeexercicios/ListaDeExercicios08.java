@@ -190,6 +190,7 @@ public class ListaDeExercicios08 {
             }
         }
     }
+
     private static void Exercicio01() {
         System.out.println("IMPRIMIR MAIOR QUE 20 \n");
         int numero = ler.nextInt();
@@ -200,6 +201,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio02() {
         System.out.println("SOMAR DOIS NÚMEROS, SE FOR MAIOR QUE 10, EXIBIR\n");
         System.out.print("Digite o primeiro número > ");
@@ -213,6 +215,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio03() {
         System.out.println("DIZER SE O NÚMER É PAR OU IMPAR\n");
         System.out.print("Digite o número > ");
@@ -224,6 +227,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio04() {
         System.out.println("INFORMAR SE NUMERO É DIVISÍVEL OU NÃO POR 5\n");
         System.out.print("Digite o número > ");
@@ -235,6 +239,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio05() {
         System.out.println("INFORMAR SE NUMERO É DIVISÍVEL OU NÃO POR 3 e 5\n");
         System.out.print("Digite o número > ");
@@ -246,6 +251,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio06() {
         System.out.println("INFORMAR SE NÚMERO É DIVISIVEL POR 10 OU 5\n");
         System.out.println("Entre com o número > ");
@@ -261,6 +267,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio07() {
         System.out.println("VERIFICAR SE NÚMERO ESTÁ ENTRE 20 E 90\n");
         System.out.print("Digite o número > ");
@@ -272,6 +279,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio08() {
         System.out.println("MAIOR, MENOR OU IGUAL A 20\n");
         System.out.println("Digite o número > ");
@@ -285,6 +293,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio09() {
         System.out.println("INFORMAR SE DIGITO DA DEZENA É PAR OU IMPAR\n");
         System.out.print("Digite um número > ");
@@ -298,6 +307,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio10() {
         System.out.println("BOLETIM DO ALUNO\n");
         System.out.print("Nome do aluno: ");
@@ -319,6 +329,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio11() {
         System.out.println("MOSTRAR SE NÚMERO É DIVISÍVEL PELO ANTERIOR\n");
         System.out.print("Digite o 1° número > ");
@@ -332,7 +343,8 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
-    private static void Exercicio12(){
+
+    private static void Exercicio12() {
         System.out.println("QUOCIENTE INTEIRO OU NÃO\n");
         System.out.print("Digite o dividendo > ");
         int dividendo = ler.nextInt();
@@ -345,6 +357,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio13() {
         System.out.println("NÚMEROS IGUAIS OU DIFERENTES\n");
         System.out.print("Digite o 1° número > ");
@@ -358,6 +371,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio14() {
         System.out.println("IMPRIMIR MAIOR NÚMERO\n");
         System.out.println("Digite o 1° número > ");
@@ -373,6 +387,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio15() {
         System.out.println("IMPRIMIR MENOR NÚMERO\n");
         System.out.println("Digite o 1° número > ");
@@ -386,6 +401,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio16() {
         System.out.println("NÚMEROS EM ORDEM CRESCENTE\n");
         System.out.print("Digite o primeiro número > ");
@@ -399,6 +415,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio17() {
         System.out.println("NÚMEROS EM ORDEM DECRESCENTE\n");
         System.out.print("Digite o primeiro número > ");
@@ -412,6 +429,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio18() {
         System.out.println("IMPRIMIR MAIOR DOS TRÊS NÚMEROS\n");
         System.out.print("Digite o primeiro número > ");
@@ -433,6 +451,7 @@ public class ListaDeExercicios08 {
         System.out.println("O maior número é: " + maior);
         main(null);
     }
+
     private static void Exercicio19() {
         System.out.println("ARMAZENAR MAIOR DOS TRÊS NÚMEROS\n");
         System.out.print("Digite o primeiro número > ");
@@ -454,6 +473,7 @@ public class ListaDeExercicios08 {
         System.out.println("O maior número é: " + maior);
         main(null);
     }
+
     private static void Exercicio20() {
         System.out.println("ORDEM CRESCENTE COM 3 NÚMEROS\n");
         int num, maior = 0, menor = 0, intermediario = 0;
@@ -474,6 +494,7 @@ public class ListaDeExercicios08 {
         System.out.println(menor + ", " + intermediario + ", " + maior);
         main(null);
     }
+
     private static void Exercicio21() {
         System.out.println("ORDEM CRESCENTE COM 3 NÚMEROS\n");
         int num, maior = 0, menor = 0, intermediario = 0;
@@ -494,6 +515,7 @@ public class ListaDeExercicios08 {
         System.out.println(maior + ", " + intermediario + ", " + menor);
         main(null);
     }
+
     private static void Exercicio22() {
         System.out.println("MAIOR, INTERMEDIÁRIO E MENOR\n");
         int num, maior = 0, menor = 0, intermediario = 0;
@@ -514,6 +536,7 @@ public class ListaDeExercicios08 {
         System.out.println(menor + ", " + intermediario + ", " + maior);
         main(null);
     }
+
     private static void Exercicio23() {
         System.out.println("MAIOR E MENOR DE 5 NÚMEROS\n");
         int maior = 0, num = 0, menor = 999999999;
@@ -529,6 +552,7 @@ public class ListaDeExercicios08 {
         System.out.printf("Maior: %s \nMenor:%s", maior, menor);
         main(null);
     }
+
     private static void Exercicio24() {
         System.out.println("PODE OU NÃO SER TRIÂNGULO\n");
         System.out.print("Digite o primeiro número > ");
@@ -544,6 +568,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio25() {
 
         System.out.println("CLASSIFICAÇÃO DOS TRIÂNGULOS\n");
@@ -562,6 +587,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio26() {
         System.out.println("CLASSIFICAÇÃO DOS TRIÂNGULOS POR ÂNGULOS\n");
         System.out.print("Digite a primeira medida > ");
@@ -579,6 +605,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio27() {
         System.out.println("SALÁRIO COM DESCONTO DO INSS\n");
         System.out.print("Digite o salário > ");
@@ -595,6 +622,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio28() {
         System.out.println("AJUDA AO COMERCIANTE\n");
         System.out.print("Digite o valor do produto > ");
@@ -606,6 +634,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio29() {
         System.out.println("IDADE DE UMA PESSOA");
         System.out.print("Digite sua idade > ");
@@ -619,6 +648,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio30() {
         System.out.println("IDADE A PARTIR DO ANO ATUAL\n");
         System.out.print("Digite o ano atual > ");
@@ -632,6 +662,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio31() {
         System.out.println("TROCA DE VALORES A E B\n");
         System.out.print("Digite o valor de A > ");
@@ -644,6 +675,7 @@ public class ListaDeExercicios08 {
         System.out.println("A = " + a + "\nB = " + b);
         main(null);
     }
+
     private static void Exercicio32() {
         System.out.println("CLASSE ELEITORAL\n");
         System.out.print("Digite sua idade > ");
@@ -657,6 +689,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio33() {
         System.out.println("PLANO DE SAÚDE\n");
         System.out.print("Digite seu nome: ");
@@ -679,6 +712,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio34() {
         System.out.println("DIZER SE NÚMERO ESTÁ ENTRE ITERVALOS\n");
         System.out.print("Digite o número > ");
@@ -696,6 +730,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio35() {
         System.out.println("EQUAÇÃO DE SEGUNDO GRAU");
         int a, b, c;
@@ -724,6 +759,7 @@ public class ListaDeExercicios08 {
             }
         }
     }
+
     private static void Exercicio36() {
         System.out.println("ESTADO CIVIL\n");
         System.out.println("------------------- MENU -----------------");
@@ -751,6 +787,7 @@ public class ListaDeExercicios08 {
                 break;
         }
     }
+
     private static void Exercicio37() {
         System.out.println("DIZER O MÊS\n");
         System.out.print("Digite o número do mês > ");
@@ -798,6 +835,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio38() {
         System.out.println("VALOR DA VENDA\n");
         System.out.print("Digite o valor da compra > ");
@@ -813,6 +851,7 @@ public class ListaDeExercicios08 {
         }
         main(null);
     }
+
     private static void Exercicio39() {
         System.out.println("IMC\n");
         System.out.print("Digite seu nome: ");
@@ -834,6 +873,7 @@ public class ListaDeExercicios08 {
             System.out.println(nome + " você está: Com Obesidade mórbida");
         }
     }
+
     private static void Exercicio40() {
         System.out.println("DOSAGEM CORRETA\n");
         int idade = 0;
@@ -861,6 +901,7 @@ public class ListaDeExercicios08 {
         }
         System.out.println("Dosagem > " + dosagem);
     }
+
     private static void Exercicio41() {
         System.out.println("POLUIÇÃO DAS FÁBRICAS");
         double poluicao = 0;

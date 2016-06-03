@@ -13,43 +13,35 @@ public class MenuListas {
 
         switch (exercicio) {
             case "0":
-                ExerciciosPorFora ExerciciosPorFora = new ExerciciosPorFora();
                 ExerciciosPorFora.main(null);
                 break;
             case "1":
-                ListaDeExercicios01 lista1 = new ListaDeExercicios01();
-                lista1.main(null);
+                ListaDeExercicios01.main(null);
                 break;
             case "2":
-                //PERDIDO
+                ListaDeExercicios02.main(null);
                 break;
             case "3":
-                ListadeExercicios03 lista3 = new ListadeExercicios03();
-                lista3.main(null);
+                ListadeExercicios03.main(null);
                 break;
             case "4":
-                //PERDIDO
+                //PERDIDO------------------------------------------------------------------------
                 break;
             case "5":
-                ListadeExercicios05 lista5 = new ListadeExercicios05();
-                lista5.main(null);
+                ListadeExercicios05.main(null);
                 break;
             case "6":
-                ListaDeExercicios06 lista6 = new ListaDeExercicios06();
-                lista6.main(null);
+                ListaDeExercicios06.main(null);
                 break;
             case "7":
-                //PERDIDO
+                //PERDIDO ------------------------------------------------------------------------
                 break;
             case "8":
-                ListaDeExercicios08 lista8 = new ListaDeExercicios08();
-                lista8.main(null);
+                ListaDeExercicios08.main(null);
                 break;
             case "9":
-                ListaDeExercicios09 lista9 = new ListaDeExercicios09();
-                lista9.main(null);
+                ListaDeExercicios09.main(null);
                 break;
-
             default:
                 System.out.println("Lista não existe...\n");
                 main(null);
