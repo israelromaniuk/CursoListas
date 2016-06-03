@@ -7,13 +7,13 @@ public class ListaDeExercicios01 {
 	static Scanner ler = new Scanner(System.in);
 
 	public static void main(String[] args) {
-
+        
 		boolean rVouF = true;
 
 		while (rVouF) {
 
 			System.out.println("--------------------------------------------");
-			System.out.printf("DIGITE O N�MERO DA QUEST�O > ");
+			System.out.printf("DIGITE O NÚMERO DA QUEST�O > ");
 			String resposta1 = ler.next();
 
 			System.out.println("--------------------------------------------");
@@ -39,38 +39,16 @@ public class ListaDeExercicios01 {
 				Exercicio005();
 				rVouF = false;
 				break;
-			case "6":
-				Exercicio006();
-				rVouF = false;
-				break;
-			case "7":
-				Exercicio007();
-				rVouF = false;
-				break;
-			case "8":
-				Exercicio008();
-				rVouF = false;
-				break;
-			case "9":
-				Exercicio009();
-				rVouF = false;
-				break;
-			case "10":
-				Exercicio010();
-				rVouF = false;
-				break;
-			case "11":
-				Exercicio011();
-				rVouF = false;
-				break;
+                        case "0":
+                            MenuListas menu = new MenuListas();
+                            menu.main(null);
 			default:
-				System.out.println("Quest�o n�o encontrada...");
+				System.out.println("Questão não encontrada...");
 				main(null);
 				break;
 			}
 		}
-
-	}
+    }
 
 	public static void Exercicio001() {
 

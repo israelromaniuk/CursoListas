@@ -17,18 +17,29 @@ public class MenuListas {
                 ExerciciosPorFora.main(null);
                 break;
             case "1":
+                ListaDeExercicios01 lista1 = new ListaDeExercicios01();
+                lista1.main(null);
                 break;
             case "2":
+                //PERDIDO
                 break;
             case "3":
+                ListadeExercicios03 lista3 = new ListadeExercicios03();
+                lista3.main(null);
                 break;
             case "4":
+                //PERDIDO
                 break;
             case "5":
+                ListadeExercicios05 lista5 = new ListadeExercicios05();
+                lista5.main(null);
                 break;
             case "6":
+                ListaDeExercicios06 lista6 = new ListaDeExercicios06();
+                lista6.main(null);
                 break;
             case "7":
+                //PERDIDO
                 break;
             case "8":
                 ListaDeExercicios08 lista8 = new ListaDeExercicios08();

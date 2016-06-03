@@ -1,24 +1,58 @@
 package listadeexercicios;
 
+import static listadeexercicios.ListaDeExercicios01.ler;
+
 public class ExerciciosPorFora {
 
     public static void main(String[] args) {
 
-        System.out.println("Sequencia de Fibonacci\n");
+        boolean rVouF = true;
 
-        int valor[] = new int[13], antecessor = 0, total = 0;
+        while (rVouF) {
 
-        for (int i = 1; i <= 12; i++) {
+            System.out.println("--------------------------------------------");
+            System.out.printf("DIGITE O NÚMERO DA QUEST�O > ");
+            String resposta1 = ler.next();
 
-            if (i <= 2) {
-                antecessor = i;
-            } else {
-                antecessor+=antecessor;
-                valor[i] += antecessor;
+            System.out.println("--------------------------------------------");
+
+            switch (resposta1) {
+                case "0":
+                    MenuListas menu = new MenuListas();
+                    menu.main(null);
+                case "1":
+                    Exercicio001();
+                    rVouF = false;
+                    break;
+                default:
+                    System.out.println("Questão não encontrada...");
+                    main(null);
+                    break;
             }
-            System.out.println(antecessor-1);
+        }
+    }
+
+    private static void Exercicio001() {
+        
+        System.out.println("MATRIZ\n");
+
+        int linha[][] = new int[4][4];
+
+        for (int i = 1; i <= 3; i++) {
+            for (int x = 1; x <= 3; x++) {
+                System.out.printf("Digite o número da matriz [%s][%s] > ", i, x);
+                linha[i][x] = ler.nextInt();
+            }
         }
 
+        for (int a = 1; a <= 3; a++) {
+            for (int b = 1; b <= 3; b++) {
+                System.out.print(linha[a][b]+" ");
+            }
+            
+            System.out.println();
+        }
+        main(null);
     }
 
 }
