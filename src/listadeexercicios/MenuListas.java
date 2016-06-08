@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class MenuListas {
 
-    static Scanner ler = new Scanner(System.in);
+    static Scanner leia = new Scanner(System.in);
 
     public static void main(String[] args) {
 
         System.out.print("Digite o número da Lista > ");
-        String exercicio = ler.next();
+        String exercicio = leia.next();
 
         switch (exercicio) {
             case "0":
